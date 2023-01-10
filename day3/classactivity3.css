@@ -36,7 +36,7 @@
         background-color: rgba(0, 0, 0, 0.3);
         color: azure;
         box-shadow: 0px 0px 5px 10px blue;
-        padding: 10px;
+        padding: 20px;
     }
     .pos3{
         position: absolute;
@@ -57,23 +57,31 @@
        color: burlywood; 
        opacity:.6;
     }
-    .paragraph3{
+    .paraBali{
+        position: absolute;
+        bottom: 50%;
+        top: 100%;
+        left:15%;
+        width: 100%;
         opacity: .8;
         text-align: left;
-        }
-        .paragraph4{
+        font-size: 1em;
+    }
+    .paraBali1{
+            position: absolute;
+            bottom: 240%;
             opacity: .6;
             text-align: right;
+            font-size: 1em;
         }
-        .paragraph5{
-            opacity: .4;
-            
-        }
-        .heroText{
+    .paraBali2{
+            top: 10%;
+            opacity:.4;}
+    .heroText{
             position: absolute;
             bottom: 100%;
             left: 30%;
-           width: 20%;
+            width: 20%;
             color: blueviolet;
             text-align: center;
 }
@@ -101,11 +109,5 @@
         filter: blur(3px);
     }
     .image3{
-            background-image: linear-gradient(to left, rgba(255, 123, 0, 0.6),rgba(0, 0, 0, 0.6)),
-           url("images/waterfall.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            height: 500px;
-            position: relative;
+        filter: sepia(50%);
     }
