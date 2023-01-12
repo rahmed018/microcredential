@@ -1,0 +1,283 @@
+.animation{
+    width: 90%;
+    height: 40%;
+    position: relative;
+}
+.bg{
+    width:100%; 
+    display: block;
+    animation-delay: 1s;
+    animation: backgroundAnimation 500ms;
+    animation-iteration-count: 2;
+}
+@keyframes backgroundAnimation{
+    0%, 100% {-webkit-filter: invert(0%);}
+    50% {-webkit-filter: invert(100%);}
+}
+.animation{
+    width: 100%;
+    margin: auto;
+    border: ridge 1em teal;
+    position: relative;}
+.pos{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 20%;
+    color: red;
+    text-align:right;
+    padding:8px;
+    font-size:35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 0.7;
+    animation: slidePos 3s ease-in-out 5s 3 alternate forwards;
+}
+@keyframes slidePos{
+    from{transform: translateX(0);}
+    to{transform: translateX(-300%);}    
+}
+    .camera{
+        width:20%;
+        position: absolute;
+        bottom:-5%;
+        top: 45%;
+        left:24%;
+        opacity: 0.9;
+        animation: zoom 6s alternate 2;
+        animation: slideCamera 3s ease-in 5s 3 alternate-reverse;
+    }
+    @keyframes zoom{
+        0%{transform: scale(0);}
+        30%{transform: scale(1.2)}
+        60% {transform: scale(0.1);}
+        100%{transform: scale(2);}
+    }
+    @keyframes slideCamera{
+        from{transform: translateX(0);}
+        to{transform: translateX(-300%);}    
+    }
+
+.heart1{
+    position: absolute;
+    width: 10%;
+    top: 5%;
+    left:10%;
+    bottom: 80%;
+    opacity: 0.1;
+    animation:zoom1 1s alternate-reverse;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes zoom1{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart2{
+    position: absolute;
+    width: 15%;
+    top:5%;
+    right: 20%;
+    opacity: 0.2;
+    animation:zoom2 1s alternate;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes zoom2{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart3{
+    position: absolute;
+    width: 5%;
+    top: 5%;
+    right: 4%;
+    opacity: 0.3;
+    animation: zoom3 1s alternate;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes zoom3{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart4{
+    position: absolute;
+    width: 8%;
+    top: 8%;
+    left: 40%;
+    bottom: 3%;
+    opacity: 0.4;
+    animation:zoom4 1s alternate;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes zoom4{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart5{
+    position: absolute;
+    width: 6%;
+    top: 60%;
+    bottom: 8%;
+    left: 60%;
+    opacity: 0.5;
+    animation:zoom5 1s alternate-reverse;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes zoom5{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart6{
+    position: absolute;
+    width: 15%;
+    top: 40%;
+    bottom: 10%;
+    left: 65%;
+    opacity: 0.3;
+    animation: zoom6 1s ease-in 2s infinite alternate-reverse;
+}
+@keyframes zoom6{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart7{
+    position: absolute;
+    width: 12%;
+    top: 50%;
+    bottom: 15%;
+    opacity: 0.2;
+    left: 80%;
+    animation: zoom6 1s ease-in 2s infinite alternate-reverse;
+}
+@keyframes zoom7{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart8{
+    position: absolute;
+    width: 15%;
+    top: 60%;
+    bottom: 18%;
+    left: 84%;
+    opacity: 0.9;
+    animation: zoom6 1s ease-in 2s infinite alternate-reverse;
+}
+@keyframes zoom8{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart9{
+    position: absolute;
+    width: 9%;
+    top: 30%;
+    bottom: 5%;
+    opacity: 0.2;
+    animation: zoom6 1s ease-in 2s infinite alternate-reverse;
+}
+@keyframes zoom9{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart10{
+    position: absolute;
+    width:24%;
+    top: 5%;
+    left: 10%;
+    opacity: 0.3;
+    animation: zoom6 1s ease-in 2s infinite alternate-reverse;
+}
+@keyframes zoom10{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart11{
+    position: absolute;
+    width: 13%;
+    top: -1%;
+    left: -1%;
+    opacity: 0.7;
+    animation: zoom6 1s ease-in 2s infinite alternate-reverse;
+}
+@keyframes zoom11{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+.heart12{
+    position:absolute ;
+    width: 2%;
+    top: 40%;
+    right: 20%;
+    opacity: 0.4;
+    animation: zoom6 1s ease-in 2s infinite alternate-reverse;
+}
+@keyframes zoom12{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
