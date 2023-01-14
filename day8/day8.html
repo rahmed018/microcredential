@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 - Reema Ahmed</title>
+</head>
+<body>
+    <h1>Reema Ahmed</h1>
+    <!-- JAVASCRIPT -->
+    <script>
+
+      let firstName,lastName;
+      let x = 100, y = -1.5, z = 7;
+      let boolean1 = true, boolean2 = false;
+      let name = null;
+
+      firstName = 'Maria';
+      firstName ="Peter";
+
+      console.log('Hello there!')
+      console.log(firstName, y)
+      console.log('First name =', firstName)
+      console.log(firstName + ' is my first name');
+      console.log(`${firstName} is my first name`);
+
+     let fullName = prompt('Please enter a name: ');
+     console.log(`The entered name is: ${fullName}`);
+
+     let num1 =parseInt(prompt('Enter number 1:'));
+     let num2 = prompt('Enter number 2:');
+     num1 = parseInt(num1);
+     num2 = parseInt(num2);
+     let sum = num1 + num2;
+     let allUpperCase =fullName.toUpperCase();
+     console.log(allUpperCase);
+
+     let myString = "Queensborough Community College";
+     console.log(myString);
+     let stringLocation = myString.search('Co');
+     console.log(`The index location for Co is = ${stringLocation}`);
+
+     // remove white space in a string
+     let name1 = `           William             Smith`;
+     // subtracting characters 
+     let subWord = myString.substr(6,7);
+     console.log(subWord);
+
+     //first find the position of the word and then subtract 5 character from the word
+     let findFirst = myString.search('Com');
+     let subSec =myString.substr(findFirst,5);
+     console.log(`The substracted characters are ${subSec}`);
+
+     // extract characters from an string
+     let extractCharacter = myString.slice(6,10);
+     console.log(`The extracted characters are ${extractCharacter}`);
+
+     // ARRAYS
+     let fruits;
+     fruits = ["apples", 'oranges', 'grapes'];
+
+     let cars = ['Nissan','Tesla','Mazda','Mercedez'];
+     let mixedItems = [65, true, 'cats'];
+     
+     console.log(cars);
+     console.log(mixedItems);
+     console.log(`The second item in array fruits is: ${fruits[1]}`)
+
+     let countries = ['Canada', 'USA', ['Mexico', 'Colombia', 'Peru']]; //nesting arrays 
+        console.log(countries);
+        console.log(countries[2][1]);
+
+        //create a copy of an array
+        let newItems = mixedItems; //direct copy: link update
+        let newItemsSlice = mixedItems.slice(); // make an independant copy: updates are not linked
+
+    
+
+     // ACTIVITY 5 //
+     console.log('Activity 5.1')
+     
+     let name2 = prompt('Please enter your name')
+     let luckynumber = prompt('Your lucky number is')
+     console.log(' Welcome to the program ' + name2 + ' Your lucky number is ' + luckynumber)
+     console.log(`Good Morning: ${name2}.  Your entered number: ${luckynumber}`);
+
+     console.log('Activity 5.2')
+
+     let myString2 = prompt("Enter an word")
+     console.log(`The second letter of the word is: ${myString2[1]}`)
+     console.log(`The length of the word ${myString2} is ${[myString2.length]}`)
+     let myUpperString1 = myString2.toUpperCase();
+     console.log(myUpperString1);
+     let extractCharacter2 = myString2.slice(-1,-2);
+     console.log(`The last two characters of the word ${myString2} is ${extractCharacter2}`);
+
+     let array;
+     array = ['zebra', 'water', false, 18, 'name']
+     console.log(` Mixed array with initial values: ` + array);
+     let animal = prompt("Enter the name of an Animal");
+     array.push(animal);
+     console.log(` Mixed array with an new animal added to the end: ` +  array);
+
+     let negative = prompt("Enter a Negative Number");
+     array.unshift(negative);
+     console.log(` Mixed array with a new negative number added to the front, beginning, of the array: ` + array);
+
+     let copyArray = array.slice()
+     let reverseArray = copyArray.reverse()
+     console.log(` Mixed array ${array}  and reverse of copy array: ${reverseArray} ` )
+     
+    </script>
+</body>
+</html>
