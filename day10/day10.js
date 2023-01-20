@@ -87,3 +87,22 @@ for(let t = 20; t>0 ; t--){
 */
 
 let num2 = parseInt(prompt(`Enter a number between 1 and 10:`));
+let anotherNum = isNaN(num2)
+
+
+while (anotherNum===true || num2<0 || anotherNum>10){
+    if (num2<0){
+        num2=parseInt(prompt(` Invalid entry. Enter a number between 1 and 10 `))
+    }
+    else if (num2>10){
+        num2=parseInt(prompt(`Invalid entry. Enter a number between 1 and 10`))
+    }
+    else{
+        num2=parseInt(prompt(`Invalid entry, this is a string. Enter a number between 0 and 10`))
+    }
+}
+
+console.log(`you entered ${num2}`)
+
+for(let counter = num2 ; counter<=20;counter++){
+    console.log(`Number is ${counter} now`)}
