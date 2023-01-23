@@ -1,0 +1,160 @@
+.image1{
+ background-color: lightblue;
+ width: 110%;
+ height: 110%;
+}
+.header{
+ width: 100%;
+ box-shadow: 5px 5px 5px black;
+ font-weight: 600;
+ text-align: center;
+ background-color: white;
+ position: absolute;
+ top: 15%;
+ left: 10%;
+ width: 70%;
+ color: blue;
+ text-align:center;
+ padding:8px;
+ font-size:55px;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ opacity: 0.7;
+ animation: slideHeader 2s ease-in-out 5s 3 alternate forwards;
+}
+@keyframes slideHeader{
+ from{transform: translateX(0);}
+ to{transform: translateX(-300%);} 
+}
+
+ .image1{
+    width: 100%;
+ }
+ .plane{
+    position: absolute;
+    width: 10%;
+    top:5%;
+    right: 10%;
+    opacity: 0.8;
+    animation: plane 3s alternate-reverse;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes plane{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform: scale(1.2);}
+    100%{transform: scale(0);}
+}
+
+.pos{
+    position: absolute;
+    top: 118%;
+    left: 5%;
+    width: 50%;
+    color: blue;
+    text-align:left;
+    font-size:25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.flag{
+    width: 30%;
+    position: absolute;
+    right: 6%;
+    bottom: -70%;
+    filter: invert(10%);
+    border-radius: 100%;
+   
+}
+.navTabs{
+    position: absolute;
+    width: 90%;
+    bottom: -10%;
+    right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav{
+    display:inline-block;
+    padding:1em;
+    width: 20%;
+    background-color: rgba(18, 22, 148, 0.422);
+    color: papayawhip;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 10px;
+    transition: 500ms;
+}
+.nav:hover{
+    background-color: rgba(13, 8, 79, 0.8);
+    box-shadow: 0px 0px 5px 1px white;
+}
+.image2{
+    width: 52%;
+    margin-top: 38%;
+    margin-right: 26%;
+    border: solid 5px rgb(0, 26, 128);
+    box-shadow: azure;
+    padding: 1px;
+    filter: sepia(60%);
+}
+.pos2{
+    position: absolute;
+    top: 180%;
+    right: -4%;
+    width: 45%;
+    color: white;
+    text-align:center;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.image3{
+    position: absolute;
+    width: 54%;
+    top: 243%;
+    left: 53%;
+    border: ridge white;
+    filter: sepia(100%);
+
+}
+.para3{
+    position: absolute;
+    font-size: 25px;
+    text-align: left;
+    width: 50%;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.pos3{
+    text-align: left;
+    font-size: 1.5em;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.pos4{
+    font-size: 2em;
+    margin-top: 25%;
+    margin-left: 70%;
+    text-align: left;
+    color: blue;
+}
+.pos5{
+    margin-top: -9%;
+}
+.list{
+    font-size: 1.5em;
+    color: white;
+   margin-top: -20%;
+}
+@media only screen and (max-width:1000px){
+    .navTabs{bottom: 20%;}
+    .pos{top: 90%;}
+    .flag{bottom: -40%;}
+    .nav{width: 25%; font-size: 1.1em;}
+    .para3{bottom: -180%;}
+    .pos2{top: 150%;}
+    .image2{margin-bottom: 20%;}
+    .image3{margin-right: 60%;}
+}
+
