@@ -51,13 +51,13 @@ function hoverCircle(){
     $(`.circle`).html(`<p> Circle was hovered! </p>`)
 }
 function resizeWindow(){
-    $(`.circle`).html(`<p>Window was resized!</p>`)
+    $(`.circle`).html(`<p> Window was resized! </p>`)
 }
 function dblClickCircle(){
     $(`.circle`).html(`<p> Double Click!</p>`)
 }
 $(`.circle`).hover(hoverCircle)
-$(`window`).resize(resizeWindow)
+$(window).resize(resizeWindow)
 $(`.circle`).dblclick(dblClickCircle)
 
 /* JS code */
