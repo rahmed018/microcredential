@@ -11,5 +11,5 @@ function passValues(){
     sessionStorage.setItem(`userN`, username)
     return false
 }
-let input1 = document.querySelector(`.submit`)
+let input1 = document.querySelector(`.submit1`)
 input1.addEventListener(`click`,passValues)
