@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Website Reema Ahmed</title>
+    <link rel="stylesheet" href="saleswebsite.css" type="text/css">
+</head>
+<body>
+    <nav class="horizontal">
+        <h1 class="pos">Diamond World est. 2023
+        </h1>
+        <a href="#about" class="link2">Home</a>
+        <a href="#items" class="link2">Products</a>
+        <a href="#contact"  class="link2">Contact Us</a>
+        <a href="#direction" class="link2">Location</a>
+    </nav>
+    <h1 class="stickyH1">Valentine's Day Special Use Code: LOVE10</h1>
+    <main class="container">
+        <div class="item">
+            <!--Item 1-->
+            <header class="imgCont"><img src="pictures/ring2.jpg" alt="image of a ring" title="Go to: jewelry ring" class="itemImg" ></header>
+            <section class="infoItem">
+             <p class="p1">New Ring</p>  
+             <p class="p2">Diamond Dazzle</p> 
+             <p class="p3">Oval Cut</p>
+             <p class="p4">$3500.00</p>
+             <p class="p5">Get 20% off now</p>
+            </section>
+            <footer class="linkItem">
+            <a href="#windowItem1"class="link link1" >ADD TO BAG</a>
+            </footer>
+    
+        </div>
+        <!--Item 2-->
+        <div class="item" id="items">
+            <header class="imgCont"><img src="pictures/ring1.jpg" alt="image of a ring" title="Go to: jewelry ring" class="itemImg" ></header>
+            <section class="infoItem">
+             <p class="p1">New Ring</p>  
+             <p class="p2">Moissanite Madness</p> 
+             <p class="p3">Princess Cut</p>
+             <p class="p4">$5500.00</p>
+             <p class="p5">Get 30% off now</p>
+            </section>
+            <footer class="linkItem">
+            <a href="" class="link">ADD TO BAG</a>
+            </footer>
+    
+        </div>
+        <!--Item 3-->
+        <div class="item">
+            <header class="imgCont"><img src="pictures/ring3.jpg" alt="image of a ring" title="Go to: jewelry ring" class="itemImg" ></header>
+            <section class="infoItem">
+             <p class="p1">New Ring</p>  
+             <p class="p2">Golden  Globe</p> 
+             <p class="p3">Square Cut</p>
+             <p class="p4">$10500.00</p>
+             <p class="p5">Get 10% off now</p>
+            </section>
+            <footer class="linkItem">
+            <a href="" class="link">ADD TO BAG</a>
+            </footer>
+    
+        </div>
+        <!--Item 4-->
+        <div class="item">
+            <header class="imgCont"><img src="pictures/ring4.jpg" alt="image of a ring" title="Go to: jewelry ring" class="itemImg" ></header>
+            <section class="infoItem">
+             <p class="p1">New Ring</p>  
+             <p class="p2">Lab Created Diamond</p> 
+             <p class="p3">Princess Cut</p>
+             <p class="p4">$7500.00</p>
+             <p class="p5">Get 25% off now</p>
+            </section>
+            <footer class="linkItem">
+            <a href="" class="link">ADD TO BAG</a>
+            </footer>
+    
+        </div>
+    </main>
+    <!--modal window item 1-->
+    <section class="modalWindow" id="windowItem1">
+    <div class="modalContent">
+        <header class="modalTop">
+            <p class="modalHead">Its In The Bag! </p>
+            <span class="modalHeadX">X</span>
+        </header>
+        <main class="modalBody">
+            <div class="modalImg">
+                <img src="pictures/ring2.jpg" alt="image of 
+                a ring">
+            </div>
+            <div class="modalInfo">
+                <p class="p1">New Ring</p>  
+             <p class="p2">Diamond Dazzle</p> 
+             <p class="p3">Oval Cut</p>
+             <p class="p4">$3500.00</p>
+             <p class="p5">Get 20% off now</p>
+            </div>    
+        </main>
+    </div>
+    </section>
+    <button class="openMenu2" id="direction">
+        Visit Us
+    </button>
+    <nav class="menu2">
+    <a href="https://www.diamondworldltd.com/store-locator" target="_blank">Sylhet</a>
+    <a href="https://www.diamondworldltd.com/store-locator" target="_blank">Gulshan</a>
+    </nav>
+    
+    <button class="openMenu" id="contact">
+        Contact Us
+    </button>
+    <nav class="menu">
+    <a href="https://in.pinterest.com/pin/397653842102420809/" target="_blank">Pinterest</a>
+    <a href="https://www.facebook.com/diamondworldcompany/" target="_blank">Facebook</a>
+    </nav>
+    <h1>Questions?</h1>
+    <form action="formsSent.html" method="post">
+        <fieldset>
+            <legend>Enter personal info</legend>
+        <input type="submit" value="SUBMIT" class="submit1">
+        
+        <p>Username info:</p>
+        <input type="text" name="username" maxlength="20" placeholder="Enter a username" id="user">
+        <p>Password info:</p>
+        <input type="password" name="password" placeholder="Enter a password">
+        <p>Gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <label type="radio" name="gender" id="female"></label>
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other">
+    <fieldset>
+        <legend>Appointments</legend>
+        <label for="date">Select date: </label>
+        <input type="date" id="date" name="date">
+        <label for="email">Email address: </label>
+        <input type="email" id="email" name="email">
+    </fieldset>
+    </form>
+        <!--SEARCH YOUTUBE-->
+    <form action="https://www.youtube.com/results">
+        <fieldset>
+        <input type="search" placeholder="Type your search" name="search_query">
+        <button>Search Youtube</button>
+    </fieldset>
+    </form>
+    <!--SEARCH GOOGLE-->
+    <form action="https://www.google.com/search">
+        <fieldset>
+        <input type="search" placeholder="Search Google" name="q">
+        <button>Search in Google</button>
+    </fieldset>
+    </form>
+    <!-- JS -->
+    <script src="saleswebsite.js"></script>
+    <hr>
+ <figure style="background-color: pink;"> <footer align="center"><p> Sales Website @ Created by: Reema Ahmed, 2023</p>
+<hr>
+    
+</body>
+</html>
